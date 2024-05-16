@@ -1,6 +1,6 @@
 const hre = require("hardhat");
-const fxRootContractABI = require("../fxRootContract.json");
-const contractJSON = require("../artifacts/contracts/OreToken.sol/DamToken.json");
+const fxRootContractABI = require("../fxRootContractABI.json");
+const contractJSON = require("../artifacts/contracts/OreToken.sol/OreToken.json");
 
 const contractAddress = "0x3BAf8Bf8dd5B5d3A1cf5fEC1397118E4C11C9317";
 const contractABI = contractJSON.abi;

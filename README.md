@@ -19,11 +19,11 @@ This repository serves as a practical guide on creating NFTs based on ERC721 sta
 
 0. Clone the repository and run `npm install` to install dependencies.
 
-1. **Mint NFTs:** Deploy the BoluToken contract on the Goerli Ethereum testnet with `npx hardhat run scripts/deploy.js --network goerli` and mint NFTs using `npx hardhat run scripts/mint.js --network goerli`. Adjust the number of minted NFTs using the `noOfNFTs` variable in "mint.js".
+1. **Mint NFTs:** Deploy the BoluToken contract on the Sepolia Ethereum testnet with `npx hardhat run scripts/deploy.js --network sepolia` and mint NFTs using `npx hardhat run scripts/mint.js --network sepolia`. Adjust the number of minted NFTs using the `noOfNFTs` variable in "mint.js".
 
 2. **Upload Images to IPFS:** Use [Pinata](https://www.pinata.cloud/) to upload NFT images to IPFS and obtain the _baseURI_ of your IPFS directory.
 
-3. **Approve and Deposit:** Use `npx hardhat run scripts/approveDeposit.js --network goerli` to approve and deposit NFTs to the Polygon network via the FxERC721RootTunnel contract.
+3. **Approve and Deposit:** Use `npx hardhat run scripts/approveDeposit.js --network sepolia` to approve and deposit NFTs to the Polygon network via the FxERC721RootTunnel contract.
 
 4. **Wait for Completion:** Allow 20-30 minutes for tokens to appear in your Polygon account after depositing them. Learn more about FxPortal [here](https://wiki.polygon.technology/docs/pos/design/bridge/l1-l2-communication/fx-portal/#how-does-it-work).
 
@@ -31,13 +31,13 @@ This repository serves as a practical guide on creating NFTs based on ERC721 sta
 
 ## Accessing Image Descriptions
 
-Use `npx hardhat run scripts/prompt.js --network goerli` to explore textual descriptions linked with NFT images after deploying the BoluToken contract.
+Use `npx hardhat run scripts/prompt.js --network sepolia` to explore textual descriptions linked with NFT images after deploying the BoluToken contract.
 
 ---
 
 ## Accessing NFT Details
 
-After minting NFTs with the BoluToken contract, access details for each NFT using `npx hardhat run scripts/nftDescription.js --network goerli`.
+After minting NFTs with the BoluToken contract, access details for each NFT using `npx hardhat run scripts/nftDescription.js --network sepolia`.
 
 The script displays:
 

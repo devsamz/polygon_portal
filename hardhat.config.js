@@ -3,7 +3,7 @@ require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.18",
+  solidity: "0.8.20",
   networks: {
     mumbai: {
       url: 'https://rpc-mumbai.maticvigil.com',
@@ -16,6 +16,6 @@ module.exports = {
     sepolia: {
       url: 'https://ethereum-sepolia-rpc.publicnode.com',
       accounts: [process.env.PRIVATE_KEY]
-    }
+    },
   }
 };

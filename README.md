@@ -37,7 +37,7 @@ Use `npx hardhat run scripts/prompt.js --network goerli` to explore textual desc
 
 ## Accessing NFT Details
 
-After minting NFTs with the BoluToken contract, access details for each NFT using `npx hardhat run scripts/nftDetail.js --network goerli`.
+After minting NFTs with the BoluToken contract, access details for each NFT using `npx hardhat run scripts/nftDescription.js --network goerli`.
 
 The script displays:
 

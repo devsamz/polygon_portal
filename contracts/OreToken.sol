@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.20;
 
 import "erc721a/contracts/ERC721A.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract OreToken is ERC721A, Ownable {
-    constructor() Ownable(msg.sender) ERC721A("OreToken", "ORT") {}
+    constructor() Ownable() ERC721A("OreToken", "ORT") {}
 
     uint256 private limit = 5;
     string[] private promptTexts = [
@@ -18,7 +18,7 @@ contract OreToken is ERC721A, Ownable {
     mapping(uint256 => string) private _tokenURIs;
 
     function _baseURI() internal pure override returns (string memory) {
-        return "QmZMcWPjGipqd4ij4LdRWZPmbGKYvW4vrAz4K6QQN9Ry45";
+        return "QmZuDbAVCLu1RR9Z3xHtP1JCfJiKyqHRwxPPwa71Dv2CSW";
     }
 
     function tokenURI(

@@ -2,7 +2,7 @@ const hre = require("hardhat");
 const contractJSON = require("../artifacts/contracts/DamToken.sol/DamToken.json");
 require("dotenv").config();
 
-const contractAddress = "0x8b760346B168B1e5de66621b5A865c463ca075fc";
+const contractAddress = "0x3BAf8Bf8dd5B5d3A1cf5fEC1397118E4C11C9317";
 const contractABI = contractJSON.abi;
 
 async function main() {

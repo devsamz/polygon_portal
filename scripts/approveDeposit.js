@@ -2,7 +2,7 @@ const hre = require("hardhat");
 const fxRootContractABI = require("../fxRootContract.json");
 const contractJSON = require("../artifacts/contracts/OreToken.sol/DamToken.json");
 
-const contractAddress = "0x8b760346B168B1e5de66621b5A865c463ca075fc";
+const contractAddress = "0x3BAf8Bf8dd5B5d3A1cf5fEC1397118E4C11C9317";
 const contractABI = contractJSON.abi;
 const fxERC721ContractAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
 const walletAddress = "0xd9102eDDbE8f4944883fea7328cEBEfb2BcB6A98";
